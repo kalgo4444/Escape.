@@ -1,0 +1,25 @@
+.futured{
+    background: #F7F7F7;
+    &__wrapper{
+    padding-top: 60px;
+    }
+&__cards{
+    margin-top: 16px;
+    border: 1px solid red;
+    padding: 7px 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+&__card:first-child{
+    background: url("../assets/images/featureCard1.png");
+    
+}
+&__card:nth-child(2){
+    background: url("../assets/images/featureCard2.png");
+}
+&__card{
+    height: 280px;
+}
+
+}

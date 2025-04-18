@@ -1,0 +1,50 @@
+.hero{
+    position: relative;
+    min-height: 500px;
+    background: url("../assets/images/heroBack.png") no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    &__content{
+        h1{
+            font-size: 50px;
+            color: #fff;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 17px;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        button{
+            padding: 12px 30px;
+            background: $main-color;
+            border-radius: 3px;
+            color: #fff;
+            font-size: 13px;
+            transition: .25s ease;
+            &:hover{
+                background: rgb(206, 136, 6);
+            }
+        }
+    }
+}
+
+
+@media (max-width:550px) {
+    .hero{
+        &__content{
+            h1{
+                font-size: 36px;
+            }
+            p{
+                font-size: 18px;
+            }
+            button{
+                font-size: 16px;
+            }
+        }
+    }
+}

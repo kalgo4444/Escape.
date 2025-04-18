@@ -6,9 +6,85 @@
     <title>Escape.</title>
     <link rel="icon" href="./assets/images/titleIcon.png">
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
+        <div class="sContainer">
+            <nav class="navbar">
+
+                <div class="navbar__logo">
+                    <img src="./assets/images/logoHeader.svg" alt="">
+                </div>
+
+                <ul class="navbar__collaction">
+                    <li class="navbar__link">
+                        <a href="#home" onclick="toggleNavbar()">
+                            <span>home</span>
+                        </a>
+                    </li>
+                    <li class="navbar__link" onclick="toggleNavbar()">
+                        <a href="#categories">
+                            <span>categories</span>
+                        </a>
+                    </li>
+                    <li class="navbar__link">
+                        <a href="#about" onclick="toggleNavbar()">
+                            <span>about</span>
+                        </a>
+                    </li>
+                    <li class="navbar__link">
+                        <a href="#contact" onclick="toggleNavbar()">
+                            <span>contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="navbar__bars" onclick="toggleNavbar()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
     </header>
+    <main>
+        <!-- hero  -->
+        <section class="hero">
+            <div class="sContainer">
+                <div class="hero__content">
+                    <h1>Let's do it together.</h1>
+                    <p>We travel the world in search of stories. Come along for the ride.</p>
+                    <button>View Latest Posts</button>
+                </div>
+            </div>
+        </section>
+        <!-- categories  -->
+        <section id="categories">
+            <div class="lContainer">
+                <div class="categories">
+                    <a href="#" class="categories__link">Nature</a>
+                    <a href="#" class="categories__link">Photography</a>
+                    <a href="#" class="categories__link">Relaxation</a>
+                    <a href="#" class="categories__link">Vacation</a>
+                    <a href="#" class="categories__link">Travel</a>
+                    <a href="#" class="categories__link">Adventure</a>
+                </div>
+            </div>
+        </section>
+        <!-- futured  -->
+        <section class="futured">
+            <div class="lContainer">
+                <div class="futured__wrapper">
+                    <p class="cardTitle">Featured Posts</p>
+                    <div class="futured__cards">
+                        <!-- card 1 -->
+                        <div class="futured__card"></div>
+                        <!-- card 2 -->
+                        <div class="futured__card"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
