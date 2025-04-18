@@ -1,0 +1,29 @@
+.footer{
+    left: 0;
+    bottom: 0;
+    background: url("../assets/images/Rectangle.png") no-repeat center/cover;
+    &__wrapper{
+        height: 89px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__action{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: #fff;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width:400px) {
+    .footer{
+        &__wrapper{
+            padding: 15px 0;
+            flex-direction: column;
+        }
+    }
+}
