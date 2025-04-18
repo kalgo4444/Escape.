@@ -65,3 +65,20 @@ p,span,a{
     border-bottom: 2px solid #DEDEDE;
     font-size: 20px;
 }
+
+@keyframes apper {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.blockAnimation {
+    animation: apper linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
