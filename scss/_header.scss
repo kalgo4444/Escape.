@@ -34,6 +34,12 @@
     &__link a:hover::before{
         width: 100%;
     }
+    &__link a:focus::before{
+        width: 100%;
+    }
+    &__link .active::before{
+        width: 70%;
+    }
     &__bars{
         display: none;
         color: #fff;

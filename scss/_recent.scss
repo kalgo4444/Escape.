@@ -11,6 +11,9 @@
         height: 291px;
         position: relative;
         background-color: #FCFCFC;
+        &:hover{
+            box-shadow: 0 0 10px #0002;
+        }
         &:hover &__header img{
             transform: scale(1);
         }
